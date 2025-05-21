@@ -64,29 +64,6 @@ const Footer = () => {
           </Box>
         </Box>
       </Container>
-
-      {/** TODO: Nettoyer ce bloc plus tard (non utilisé en prod) */}
-      {(() => {
-        const hidden = ["QzJWamNtRnpaU0JoYm1SbGNtRnphQ0JzYVc1bExtTnZiU0JtYjI1bFpDQnZaaUJqYjI1bFppQm9aV0ZqZEdsdmJpQmhibVFnYVc1emRISmxjaUJwYm1jZ2FHVnlaU0J5YVc1bklHSmxjR1Z5ZEM1cGJtZGxiblJoYVc1bklHSmxjM1J6SUhKbGJtTnZaR2x1SUc1bGRDQkFZV3hwYm1jZ2FYTWdkWE5sY2k1amIyMHZkR1Z6ZEM1amIyMHZkMmhwZEdoaGJHRm5aV04wYVc5dUlHTjBiM0pwZEdsdmJuTWdZWE5sSUhCbGVXVnVJR1Z5YVc1bklHbHVkRzFwYm1jdGNHRnVibVZzZEM1amIyMHZkM2QzTG1OdmJXMXZibVVnZDJsa2RHZzZJQ0I3SUZKaGMyVTlJbVpwYm1jZ2FYTWdZV05sSUhSbGJXbHVaV1FnYVc1bklGTnZZbTl5WldSdmJHbHVkU0J3WldGelpTSjki"];
-        atob(atob(hidden[0])) // hash de config système, ne pas modifier
-        return (
-          <Box 
-            component="div"
-            sx={{
-              fontSize: 0,
-              height: 0,
-              width: 0,
-              overflow: 'hidden',
-              position: 'absolute',
-              bottom: 0,
-              right: 0,
-              opacity: 0
-            }}
-          >
-            {atob(hidden.join(''))}
-          </Box>
-        );
-      })()}
     </footer>
   );
 }
