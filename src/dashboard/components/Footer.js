@@ -18,9 +18,9 @@ const Footer = () => {
   if (isMobile) return null;
 
   return (
-    <footer 
+    <footer data-secret="Q3LDqWUgcGFyIFNtYWls"
       style={{
-        position: "relative", // changée pour permettre le positionnement interne
+        position: "relative",
         bottom: 0,
         left: 0,
         right: 0,
@@ -63,6 +63,7 @@ const Footer = () => {
             ))}
           </Box>
         </Box>
+
       </Container>
     </footer>
   );
