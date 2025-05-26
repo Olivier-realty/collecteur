@@ -5,7 +5,7 @@ import axios from "axios";
  */
 const isProd = window.location.hostname !== "localhost";
 const baseURL = isProd
-  ? "https://collecteur-avis.onrender.com"
+  ? "https://collecteur.onrender.com"
   : "http://localhost:5000";
 
 export const fetchCommerciauxParService = async () => {
