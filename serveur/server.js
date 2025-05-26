@@ -37,7 +37,9 @@ const ONE_DAY = 1000 * 60 * 60 * 24;
 // -------------------------
 // Middleware
 // -------------------------
-app.use(cors());
+app.use(cors({
+  origin: 'https://collecteur.vercel.app'
+}));
 app.use(express.json());
 app.use(morgan("dev"));
 
